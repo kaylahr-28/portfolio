@@ -1,0 +1,404 @@
+.manrope-normal {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.special-gothic-expanded-one-regular {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zalando-sans-expanded {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3edd0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    background-color: #aca885;
+    margin: 0;
+    margin-top: -80px;
+    margin-left: 7px;
+    width: 100vw;
+    padding: 0;
+    transform: translateX(-8px);
+    z-index: 5;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .5);
+}
+
+a {
+    color: inherit;
+}
+
+p,
+li {
+    font-size: 18px;
+}
+
+ul {
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+    color: #434a42;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 45px;
+    padding-top: 110px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: .5em 0;
+    color: #f3edd0;
+}
+
+#intro p,
+#projects p,
+h4,
+.projectintro h2,
+.back {
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-style: italic;
+
+}
+
+#projects p,
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: #e1ca96;
+}
+
+
+#intro {
+    display: grid;
+    grid-template-areas: "me hi"
+        "me interactive";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px;
+    justify-content: left;
+    align-items: center;
+    margin-top: 5em;
+    padding-top: 170px;
+    padding-bottom: 100px;
+    background: radial-gradient(circle, rgba(172, 168, 133, 1) 0%, rgba(243, 237, 208, 1) 45%);
+
+}
+
+#allprojects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#intro img {
+    grid-area: me;
+    justify-self: right;
+    box-shadow: -12px 12px #aca885, 12px -12px #626c66;
+}
+
+#intro h1 {
+    grid-area: hi;
+    align-self: flex-end;
+}
+
+#intro p {
+    grid-area: interactive;
+    align-self: start;
+}
+
+#intro h1,
+#intro p {
+    margin: 15px 30px;
+    max-width: 400px;
+}
+
+#contact {
+    background-color: #434a42;
+}
+
+#contact h2 {
+    color: #f3edd0;
+}
+
+
+p,
+li,
+button,
+#contact a {
+    font-family: "Manrope", sans-serif;
+
+    font-weight: 400;
+}
+
+.project {
+    background-color: #626c66;
+    padding: 2em;
+    margin: 1em;
+    border: #e1ca96;
+    border-radius: 10px;
+    box-shadow: 3px 3px#434a42;
+    max-width: 400px;
+
+}
+
+.project,
+#links a {
+    transition: transform .5s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+#links a:hover {
+    transform: scale(1.05);
+}
+
+#nav,
+.skills,
+.project ul {
+    list-style-type: none;
+}
+
+.project img {
+    width: 400px;
+    justify-self: center;
+    border-radius: 15px;
+}
+
+#nav li a,
+#contact a,
+#allprojects a,
+#allprojects a div,
+.back {
+    text-decoration: none;
+}
+
+#nav li a:hover,
+.back:hover {
+    text-decoration: underline;
+}
+
+#nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 1em auto;
+    height: 50px;
+    align-items: center;
+
+
+}
+
+#nav li {
+    margin: 0 auto;
+}
+
+
+.skills {
+    display: inline-block;
+    padding: 0;
+    white-space: hidden;
+    overflow: hidden;
+    animation: moveText 20s linear infinite;
+}
+
+.skills li,
+.project ul li,
+button,
+#contact a,
+.projectintro ul li {
+    background-color: #aca885;
+    margin: 0;
+    margin-right: .5em;
+    display: inline-block;
+    padding: .3em .4em;
+    border-radius: 15px;
+}
+
+.project ul li,
+button,
+#contact a {
+    outline: 1px solid #434a42;
+}
+
+
+#skilldiv {
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+#contact a {
+    font-size: 18px;
+    border: none;
+}
+
+#links {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+#allprojects a div {
+    max-width: 400px;
+    width: 100%;
+    height: 620px;
+}
+
+.projectintro {
+    margin: 0 auto;
+    display: grid;
+
+    padding: 0 2em;
+    grid-template-areas: "image pflex"
+        "image pflex"
+        "image pflex"
+        "image pflex";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 45px 50px 155px;
+    column-gap: 20px;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.projflex {
+    display: flex;
+    grid-area: pflex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.projflex ul {
+    margin-top: .5em;
+}
+
+#wicCarouselExampleControls,
+#advCarouselExampleControls,
+#kayCarouselExampleControls {
+    grid-area: image;
+    justify-self: right;
+}
+
+.projectintro img {
+    border-radius: 15px;
+
+
+}
+
+#wicCarouselExampleControls,
+#advCarouselExampleControls,
+#kayCarouselExampleControls,
+.projectintro img {
+    height: 400px;
+    width: 500px;
+}
+
+.projectintro h1 {
+    font-size: 45px;
+}
+
+.projectintro button {
+    outline: none;
+}
+
+.projectintro h2 {
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    margin-top: .3em;
+    text-align: left;
+    width: 100%;
+}
+
+.projectintro p {
+
+    align-self: start;
+}
+
+.projdesc {
+    max-width: 1000px;
+    margin: 3em auto;
+    padding: 0 2em;
+}
+
+.projdesc h2 {
+    text-align: left;
+    padding: 0;
+}
+
+.projdesc p {
+    text-indent: 2em;
+}
+
+.back {
+    margin: 2em 1.5em;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.back:hover {
+    color: inherit;
+}
+
+i {
+    margin-right: 5px;
+}
+
+#links a {
+    margin: 0em 5em;
+}
