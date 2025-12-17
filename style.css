@@ -175,7 +175,8 @@ h4 {
 p,
 li,
 button,
-#contact a {
+#contact a,
+#projflex a {
     font-family: "Manrope", sans-serif;
 
     font-weight: 400;
