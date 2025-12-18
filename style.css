@@ -176,7 +176,7 @@ p,
 li,
 button,
 #contact a,
-#projflex a {
+.projflex a {
     font-family: "Manrope", sans-serif;
 
     font-weight: 400;
@@ -402,4 +402,13 @@ i {
 
 #links a {
     margin: 0em 5em;
+}
+
+.projflex a {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.projflex a:hover {
+    color: #aca885;
 }
