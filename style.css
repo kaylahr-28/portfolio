@@ -29,6 +29,36 @@
 
 }
 
+@keyframes introText {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes intro2Text {
+    0% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -122,9 +152,9 @@ h4 {
 
 #intro {
     display: grid;
-    grid-template-areas: "me hi"
-        "me interactive";
-    grid-template-columns: 50% 50%;
+    grid-template-areas: "hi hi hi"
+        "me interactive interactive";
+    grid-template-columns: 35% 30% 35%;
     grid-template-rows: 200px 200px;
     justify-content: left;
     align-items: center;
@@ -142,25 +172,34 @@ h4 {
 }
 
 #intro img {
-    grid-area: me;
+    /**  grid-area: me;**/
+
     justify-self: right;
     box-shadow: -12px 12px #aca885, 12px -12px #626c66;
 }
 
 #intro h1 {
     grid-area: hi;
+    max-width: 800px;
     align-self: flex-end;
+    justify-self: center;
+    padding-right: 5em;
+    animation: introText 1s ease-out, fadeIn 1s ease-out;
+
 }
 
 #intro p {
     grid-area: interactive;
     align-self: start;
+    max-width: 800px;
+    animation: intro2Text 1.5s ease-out, fadeIn 1s ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
 }
 
 #intro h1,
 #intro p {
     margin: 15px 30px;
-    max-width: 400px;
 }
 
 #contact {
