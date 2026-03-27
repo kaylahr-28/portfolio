@@ -374,10 +374,13 @@ button,
     justify-self: right;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%);
+}
+
 .projectintro img {
     border-radius: 15px;
-
-
 }
 
 #wicCarouselExampleControls,
